@@ -1,0 +1,1 @@
+/home/ray/.config/nvim/init.vim
