@@ -27,14 +27,19 @@ Plug 'scrooloose/syntastic' "Syntax checker
 Plug 'notpratheek/vim-luna' "The tranny theme
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 																																
 set bg=dark
 set mouse=a
 set nohlsearch " The higlight thing after the search
-set tabstop=2 "Set tab to 2 spaces
 
+" Replace tabs with spaces
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
 " Some basics:
 	nnoremap c "_c
 	set nocompatible
@@ -61,7 +66,6 @@ map <leader>v :vsplit<CR>
 map <leader>s :split <CR>
 map <leader>qq :q!   <CR>
 map <leader>ww :wq   <CR>
-
 
 "Theming
 syntax enable
@@ -161,3 +165,5 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
