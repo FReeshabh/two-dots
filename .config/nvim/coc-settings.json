@@ -1,0 +1,6 @@
+{
+	"python.jediEnabled": false,
+    "python.autoComplete.extraPaths" : [],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "css", "markdown", "c", "cpp"]
+
+}
