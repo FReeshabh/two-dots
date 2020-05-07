@@ -4,7 +4,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 export TERMINAL='gnome-terminal'
-# export BROWSER='brave'
+export BROWSER='brave-browser'
 
 
 # get current branch in git repo
